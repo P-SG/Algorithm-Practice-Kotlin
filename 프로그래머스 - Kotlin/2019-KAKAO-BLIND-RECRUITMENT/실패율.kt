@@ -1,9 +1,5 @@
 import java.util.*
 
-class Test {
-
-    companion object{
-
         fun solution(N: Int, stages: IntArray): IntArray {
             val answer = IntArray(N)
             var map = LinkedHashMap<Int,Double>()
@@ -43,12 +39,9 @@ class Test {
         private fun fountain(a:Int, b:Int): Double = if (a==0 && b==0) 0.0 else a/b.toDouble()
 
 
-    }
-}
-
 fun main() {
     val stages = intArrayOf(2, 1, 2, 4, 2, 4, 3, 3)
-    val result = Test.solution(1,stages)
+    val result = solution(1,stages)
     for (i in result){
         println(i)
     }
